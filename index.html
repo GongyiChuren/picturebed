@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我的图床</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="top-bar">
+      <div>
+        <p class="eyebrow">GitHub Pages 图床</p>
+        <h1>我的图床</h1>
+      </div>
+      <a class="upload-link" href="https://github.com/" target="_blank" rel="noreferrer">去 GitHub 上传</a>
+    </header>
+
+    <main>
+      <section class="intro">
+        <div>
+          <h2>把图片放进 <code>images</code> 文件夹，就能用链接访问。</h2>
+          <p>
+            这个站点是纯静态页面，适合部署到 GitHub Pages。上传图片后，把下面示例里的文件名换成你的图片名即可。
+          </p>
+        </div>
+        <div class="link-box">
+          <span>访问格式</span>
+          <code>https://用户名.github.io/仓库名/images/图片名.png</code>
+        </div>
+      </section>
+
+      <section class="gallery" aria-labelledby="gallery-title">
+        <div class="section-heading">
+          <h2 id="gallery-title">图片列表</h2>
+          <p>先放了一张占位说明卡。你上传真实图片后，可以按这个格式继续添加。</p>
+        </div>
+
+        <article class="image-card">
+          <div class="placeholder" aria-hidden="true">图片</div>
+          <div class="image-info">
+            <h3>示例图片</h3>
+            <p>文件路径：<code>images/example.png</code></p>
+            <button type="button" data-copy="https://用户名.github.io/仓库名/images/example.png">
+              复制示例链接
+            </button>
+          </div>
+        </article>
+      </section>
+
+      <section class="steps" aria-labelledby="steps-title">
+        <h2 id="steps-title">部署步骤</h2>
+        <ol>
+          <li>把这个文件夹推送到 GitHub 仓库。</li>
+          <li>进入仓库 Settings → Pages。</li>
+          <li>选择分支和根目录，保存后等待部署完成。</li>
+          <li>打开 GitHub Pages 地址，测试图片链接是否能访问。</li>
+        </ol>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
